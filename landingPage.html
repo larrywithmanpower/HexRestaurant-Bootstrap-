@@ -18,6 +18,10 @@
             border-width: 2px;
         }
 
+        .form-control {
+            border-width: 2px;
+        }
+
         .header-carousel-item {
             height: 450px;
         }
@@ -43,12 +47,12 @@
     <!-- gray bg with 2 icons -->
     <div class="bg-secondary py-1">
         <div class="container text-right">
-            <a href="#" class="text-white"> <i class="fab fa-facebook-square"></i> </a>
+            <a href="#" class="text-white"><i class="fab fa-facebook-square"></i></a>
             <a href="#" class="text-white"><i class="fab fa-twitter-square"></i></a>
         </div>
     </div>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo_w.svg" alt="六角西餐廳logo">
@@ -77,8 +81,9 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="#" class="btn btn-outline-primary mr-2">登入</a>
-                    <a href="#" class="btn btn-primary">註冊</a>
+                    <a href="#" class="btn btn-outline-primary mr-2" data-toggle="modal"
+                        data-target="#loginModal">登入</a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">註冊</a>
                 </form>
             </div>
 
@@ -182,7 +187,307 @@
             </div>
         </div>
     </section>
+    <!-- 2 x 2 alignment -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center my-3">如何這麼美味</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 h1 text-info"><i class="fas fa-stroopwafel"></i></div>
+                        <div>
+                            <h3>美艷的食材</h3>
+                            <p>工作，那麼你至少得吃一對兒鯨魚……我身邊的朋友們啊，沒有錢，但又找不到出路．如果多吃魚可以補腦讓人變聰明的話，珍惜生活上帝還讓你活著，年老的時候，然後選中一張百元大鈔。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 h1 text-info"><i class="fab fa-safari"></i></div>
+                        <div>
+                            <h3>里隧道貫</h3>
+                            <p>呂明賜帶中華隊，Mark，禽流感驚爆，勸進不斷，新恐龍化石研究"雷克斯暴龍的叔公"。生，生，樹不要皮，年輕的時候，.人怕出名豬怕壯，睡你的老公，.人怕出名豬怕壯，可是已經晚了……請你以後不要在我面前說英文了。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 h1 text-info"><i class="fab fa-fedora"></i></div>
+                        <div>
+                            <h3>是貝德花芬是槐格納</h3>
+                            <p>再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你的遺像，就是你媽，他年紀雖則小，最有資格指證或相詮釋。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex">
+                        <div class="mr-3 h1 text-info"><i class="fas fa-dharmachakra"></i></div>
+                        <div>
+                            <h3>我跳出計程車跑向大直美麗華</h3>
+                            <p>星巴克，他到了，而這正是為什麼西方公司會存活，而隨著你慢慢長大變老並開始面對這些困難的選擇時，根據你和這三個主要地區員工談話和面試的經驗。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- picture on right(same as mixing grid system with .flex-row-reverse) -->
+    <section class="container-fluid py-5 bg-light text-white" style="position: relative;">
+        <div class="row flex-row-reverse">
+            <div class="col-md-5 bg-cover"
+                style="
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                background-image: url(https://images.unsplash.com/photo-1498309313100-e308c8946b45?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=);">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 text-md-dark">
+                        <h3>讓快樂持續發生</h3>
+                        <p>在每個機會裡，但現在這些亞洲父母來了，懷疑自己是否重要，到底你自己的感覺是什麼。</p>
+                        <dl class="row">
+                            <dt class="col-sm-3">不吃飽哪有力氣減肥啊？</dt>
+                            <dd class="col-sm-9">邊，是貝德花芬是槐格納你就愛，再也不出聲不鬧：并且你有的是可驚的口味，不能怨，我見著的只你。</dd>
 
+                            <dt class="col-sm-3">愛你，愛你，我們真的羡慕</dt>
+                            <dd class="col-sm-9">
+                                錢立地就成富豪勢力家，他叩了不少下頭，和別的其餘的一日，是怎樣生竟不如其死？我，愛你，愛你，我們真的羡慕，我猜想，卻沒有同樣的碎痕，雪西裡與普陀山，沒福見著你的父親，想中止也不可能。
+                            </dd>
+
+                            <dt class="col-sm-3">我再來歐洲你已經早</dt>
+                            <dd class="col-sm-9">這才覺著父性的愛像泉眼似的在性靈裏汩汩的流出：只可惜是遲了，講給我聽你得小提琴的故事：怎樣那晚上買琴來的時候你已經在你的小床上睡好。</dd>
+
+                            <dt class="col-sm-3 text-truncate">假如你單是站著看還不滿意時</dt>
+                            <dd class="col-sm-9">這時候想回頭已經太遲，只是這無恩的長路，還是有人成心種著的？</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- google map and form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.0172800937125!2d120.57954551388539!3d23.959829086662804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346936f745df524b%3A0x15f1b7b6ea8bacf9!2z5ZOh5p6X5ZyL5bCP!5e0!3m2!1szh-TW!2stw!4v1610087124692!5m2!1szh-TW!2stw"
+                        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <label for="username">姓名*</label>
+                            <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+                            <div class="invalid-feedback">
+                                請輸入姓名
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">電話*</label>
+                            <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" required>
+                            <div class="invalid-feedback">
+                                請輸入電話
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" id="email" placeholder="請輸入 Email" required>
+                            <div class="invalid-feedback">
+                                請輸入 Email
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="number">人數*</label>
+                            <input type="number" class="form-control" id="number" placeholder="請輸入人數" required>
+                            <div class="invalid-feedback">
+                                請輸入數字(無負數)
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input"
+                                required>
+                            <label class="custom-control-label" for="customRadio1">素食者</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input"
+                                required>
+                            <label class="custom-control-label" for="customRadio2">肉食者</label>
+                            <div class="invalid-feedback">
+                                ~別忘記此欄~
+                            </div>
+                        </div>
+                        <div class="text-right mt-4">
+                            <button type="button" class="btn btn-secondary">取消</button>
+                            <button type="submit" class="btn btn-primary">送出</button>
+                        </div>
+                    </form>
+                    <script>
+                        // Example starter JavaScript for disabling form submissions if there are invalid fields
+                        (function () {
+                            'use strict';
+                            window.addEventListener('load', function () {
+                                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                var forms = document.getElementsByClassName('needs-validation');
+                                // Loop over them and prevent submission
+                                var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                        if (form.checkValidity() === false) {
+                                            event.preventDefault();
+                                            event.stopPropagation();
+                                        }
+                                        form.classList.add('was-validated');
+                                    }, false);
+                                });
+                            }, false);
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2 columns with bg-img -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 bg-cover p-5 text-white"
+                style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>加入我們</small>
+                        <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+                        <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。
+                        </p>
+                        <a href="#" class="btn btn-outline-warning">加入我們</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 bg-cover p-5 text-white"
+                style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>品嚐佳餚</small>
+                        <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+                        <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。
+                        </p>
+                        <a href="#" class="btn btn-outline-warning">品嚐佳餚</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    © Copright 2021 六角學院
+                </div>
+                <div class="col-md-9">
+                    <a href="#" class="mr-2">Github</a>
+                    <a href="#" class="mr-2">Facebook</a>
+                    <a href="#">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Modal of login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">登入服務</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="font-weight-bold">
+                        <div class="form-group">
+                            <label for="emailLogin">Email</label>
+                            <input type="text" class="form-control" id="emailLoginl" placeholder="Enter Email">
+                            <small class="text-black-50">我們不會隨意將您的Email交給第三者</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordLogin">Password</label>
+                            <input type="text" class="form-control" id="passwordLogin" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberCheck1">
+                            <label class="form-check-label" for="rememberCheck1">記住帳號</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-toggle="modal" data-target="#registerModal" data-dismiss="modal"
+                        class="mr-auto font-weight-bold">趕快註冊去</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">登入</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal of register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">註冊服務</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row font-weight-bold">
+                            <div class="col-md-6">
+                                <h2 class="text-secondary">註冊六角西餐廳</h2>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Similique cupiditate fugit, molestiae libero rem eligendi dolorem laborum, corporis
+                                    eos officia veritatis voluptatum iusto est delectus, debitis soluta ipsum possimus
+                                    itaque.</p>
+                                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                                    quas doloribus perspiciatis optio repudiandae veritatis molestias earum illum vel
+                                    totam, a enim nisi, praesentium ipsum eius fuga accusantium? Tempora, deserunt!</p>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="emailRegister">Email</label>
+                                        <input type="text" class="form-control" id="emailRegister"
+                                            placeholder="Enter Email">
+                                        <small class="text-black-50">我們不會隨意將您的Email交給第三者</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordRegister">密碼</label>
+                                        <input type="text" class="form-control" id="passwordRegister"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordRegister2">確認密碼</label>
+                                        <input type="text" class="form-control" id="passwordRegister2"
+                                            placeholder="Enter Password">
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" id="agreeCheck1">
+                                        <label class="form-check-label font-weight-bold" for="agreeCheck1">同意條款</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal"
+                        class="mr-auto font-weight-bold">趕快登入去</a>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary">註冊</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
@@ -194,6 +499,15 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <!-- script for modal fixed mobile version  -->
+    <script>
+        $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function () {
+            var target = $(this).data('target'); //宣告變數 target，接收 data-target 的資料
+            $(target).on('shown.bs.modal', function () {
+                $('body').addClass('modal-open');
+            })
+        });
     </script>
 
 </body>

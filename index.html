@@ -381,7 +381,7 @@
     <!-- footer -->
     <footer class="bg-light py-5">
         <div class="container">
-            <div class="row">
+            <div class="row flex-nowrap">
                 <div class="col-md-3">
                     © Copright 2021 六角學院
                 </div>
@@ -502,10 +502,12 @@
     </script>
     <!-- script for modal fixed mobile version  -->
     <script>
-        $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function () {
-            var target = $(this).data('target'); //宣告變數 target，接收 data-target 的資料
-            $(target).on('shown.bs.modal', function () {
-                $('body').addClass('modal-open');
+        $(document).ready(function () {
+            $('a[data-dismiss="modal"][data-toggle="modal"]').on('click', function () {
+                var target = $(this).data('target'); //宣告變數 target，接收 data-target 的資料
+                $(target).on('shown.bs.modal', function () {
+                    $('body').addClass('modal-open');
+                })
             })
         });
     </script>
